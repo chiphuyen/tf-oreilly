@@ -1,0 +1,4 @@
+graphs/
+__pycache__/
+.ipynb_*
+.DS_Store
