@@ -10,30 +10,56 @@ Below is a simpler instruction on how to install tensorflow for people using Mac
 ## Install TensorFlow<br>
 ### For Mac OS
 
+#### With Docker Compose
+
+1. Install [Docker for Mac](https://docs.docker.com/docker-for-mac/install/)
+
+2. Clone Github Repo:
+
+	```
+	$ git clone https://github.com/chiphuyen/tf_oreilly.git
+	$ cd tf_oreilly/
+	```
+3. Run containers:
+
+	```
+	$ docker-compose up
+	tensorflow     |     Copy/paste this URL into your browser when...
+	tensorflow     |     to login with a token:
+	tensorflow     |         http://localhost:8888/?token=TOKEN
+	tensorboard    | Starting TensorBoard b'47' at http://0.0.0.0:6006
+	tensorboard    | (Press CTRL+C to quit)
+	```
+4. Open iPython Notebook using the URL with the token: http://localhost:8888/?token=TOKEN
+5. Open TensorBoard at: http://localhost:6006
+
+#### With System Python
+
 If you get “permission denied” error in any command, use “sudo” in front of that command.
 
 You will need pip3 (or pip if you use Python 2), and virtualenv.
 
-Step 1: set up pip and virtual environment
+1. set up pip and virtual environment
 ```bash
 $ sudo easy_install pip 
 $ sudo easy_install --upgrade six
 $ pip3 install virtualenv
 ```
 
-Step 2: set up a project directory. You will do all work for this class in this directory
+2. set up a project directory. You will do all work for this class in this directory
 ```bash
 $ mkdir [my project]
 ```
 
-Step 3: set up virtual environment for the project directory. 
+3. set up virtual environment for the project directory. 
 ```bash
 $ cd [my project]
 $ virtualenv venv --distribute
 ```
-These commands create a venv subdirectory in your project where everything is installed.
 
-Step 4: to activate the virtual environment 
+	These commands create a venv subdirectory in your project where everything is installed.
+
+4. to activate the virtual environment 
 ```bash
 $ source venv/bin/activate
 ```
