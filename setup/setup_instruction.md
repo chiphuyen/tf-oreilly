@@ -1,5 +1,5 @@
 Tensorflow supports both Python 2.7 and Python 3.3+. <b>Note that for Windows, TensorFlow supports only 64-bit Python 3.5.</b>
-For this course, I will use Python 3.6. But you’re welcome to use either Python 2 or Python 3 for the assignments. The starter code, though, will be in Python 3.6.
+For this course, I will use Python 3. But you’re welcome to use either Python 2 or Python 3 for the assignments. The starter code, though, will be in Python 3.
 
 Google has a pretty detailed instruction on how to download and setup Tensorflow. You can follow it here: https://www.tensorflow.org/get_started/os_setup
 
